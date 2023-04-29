@@ -1,0 +1,6 @@
+[submodule "system"]
+	path = system
+	url = https://smith-nekrald@bitbucket.org/smith-projects/sea-cpp-system.git
+[submodule "data"]
+	path = data
+	url = https://smith-nekrald@bitbucket.org/smith-projects/sea-python-data.git
