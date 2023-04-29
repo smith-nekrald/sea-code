@@ -4,6 +4,6 @@
 [submodule "data"]
 	path = data
 	url = https://smith-nekrald@bitbucket.org/smith-projects/sea-python-data.git
-[submodule "study"]
+[submodule "experiment"]
 	path = experiment
 	url = https://smith-nekrald@bitbucket.org/smith-projects/sea-experiment-scripts.git
