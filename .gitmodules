@@ -5,5 +5,8 @@
 	path = data
 	url = https://smith-nekrald@bitbucket.org/smith-projects/sea-python-data.git
 [submodule "experiment"]
-	path = experiment
+	path = scripts
 	url = https://smith-nekrald@bitbucket.org/smith-projects/sea-experiment-scripts.git
+[submodule "presets"]
+	path = presets
+	url = https://bitbucket.org/smith-projects/sea-presets-data.git
