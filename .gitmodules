@@ -10,3 +10,9 @@
 [submodule "presets"]
 	path = presets
 	url = https://bitbucket.org/smith-projects/sea-presets-data.git
+[submodule "launch"]
+	path = launch
+	url = https://smith-nekrald@bitbucket.org/smith-projects/sea-launch-scripts.git
+[submodule "process"]
+	path = process
+	url = https://smith-nekrald@bitbucket.org/smith-projects/sea-process-scripts.git
