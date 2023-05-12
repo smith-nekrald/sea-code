@@ -4,9 +4,17 @@
 
 set -uexo pipefail
 
+export job_max=1
+export online=0
+
+export PYTHONHASHSEED=0
+
 script_path=`readlink -f "${BASH_SOURCE[0]}"`
 script_dir=`dirname "$script_path"`
 code_root=`readlink -f "$script_dir"`
+
+experiment_root="${code_root}/experiment"
+datasets_root="${experiment_root}/datasets"
 
 system_root="$code_root"/system
 "$system_root"/setup.sh
@@ -16,6 +24,8 @@ presets_root="$code_root"/presets
 
 launch_root="$code_root"/launch
 "$launch_root"/sample_datasets.sh
+"$launch_root"/provide_configs.py --datadir "${datasets_root}" \
+    --config-base "${system_root}/src/conf/example-config.json" --calibrate
 "$launch_root"/ufgm_with_split.sh
 
 process_root="$code_root"/process
