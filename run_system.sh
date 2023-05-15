@@ -4,8 +4,10 @@
 
 set -uexo pipefail
 
-export job_max=1
+export job_max=12
 export online=0
+export large_ram=0
+export calibrate=0
 
 export PYTHONHASHSEED=0
 
@@ -24,8 +26,6 @@ presets_root="$code_root"/presets
 
 launch_root="$code_root"/launch
 "$launch_root"/sample_datasets.sh
-"$launch_root"/provide_configs.py --datadir "${datasets_root}" \
-    --config-base "${system_root}/src/conf/example-config.json" --calibrate
 "$launch_root"/ufgm_with_split.sh
 
 process_root="$code_root"/process
