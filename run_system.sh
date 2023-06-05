@@ -2,6 +2,10 @@
 
 # A one script to launch the entire system.
 
+# Author: Aliaksandr Nekrashevich
+# Email: aliaksandr.nekrashevich@queensu.ca
+# (c) Smith School of Business, 2023
+
 set -uexo pipefail
 
 export job_max=12
