@@ -13,6 +13,7 @@ mkdir -p docs
 
 # Documenting data generation part.
 cd data
+rm docs/build -rf
 ./document.sh
 cd docs/build
 zip -r sea-cargo-data-html.zip html
@@ -22,6 +23,7 @@ cd ../../../
 
 # Documenting launch part.
 cd launch 
+rm docs/build -rf
 ./document.sh
 cd docs/build
 zip -r sea-cargo-launch-html.zip html
@@ -31,6 +33,7 @@ cd ../../../
 
 # Documenting processing part.
 cd process 
+rm docs/build -rf
 ./document.sh
 cd docs/build
 zip -r sea-cargo-process-html.zip html
