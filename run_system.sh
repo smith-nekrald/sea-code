@@ -5,10 +5,11 @@
 # Author: Aliaksandr Nekrashevich
 # Email: aliaksandr.nekrashevich@queensu.ca
 # (c) Smith School of Business, 2023
+# (c) Smith School of Business, 2025
 
 set -uexo pipefail
 
-export job_max=12
+export job_max=6
 export online=0
 export large_ram=0
 export calibrate=0
