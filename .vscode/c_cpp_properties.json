@@ -1,0 +1,41 @@
+{
+    "configurations": [
+        {
+            "name": "sea-cargo",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/local/include/coin-or/**",
+                "/usr/include/coin/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerArgs": [
+                "-lgflags ",
+                "-lipopt ",
+                "-pthread ",
+                "-lunwind   ",
+                "-luuid ",
+                "-llog4cpp ",
+                "-ljsoncpp ",
+                "-lstdc++fs ",
+                "-lOsiCbc ",
+                "-lCbc ",
+                "-lCgl ",
+                "-lOsiClp ",
+                "-lOsi ",
+                "-lClp ",
+                "-lCoinUtils ",
+                "-lm ",
+                "-lz ",
+                "-lbz2 ",
+                "-llapack ",
+                "-lblas ",
+                "-ldl"
+            ]
+        }
+    ],
+    "version": 4
+}
