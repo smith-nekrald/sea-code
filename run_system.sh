@@ -31,6 +31,7 @@ presets_root="$code_root"/presets
 
 launch_root="$code_root"/launch
 "$launch_root"/sample_datasets.sh
+source "$system_root"/compilers.sh
 "$launch_root"/ufgm_with_split.sh
 
 process_root="$code_root"/process
