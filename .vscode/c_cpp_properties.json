@@ -5,12 +5,17 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "/usr/local/include/coin-or/**",
-                "/usr/include/coin/**"
+                "/usr/include/coin/**",
+                "/usr/local/gcc-14.2.0/include/**",
+                "/usr/local/gcc-14.2.0/include/c++/14.2.0/**",
+                "/usr/local/gcc-14.2.0/include/c++/14.2.0/x86_64-linux-gnu/**",
+                "/usr/local/gcc-14.2.0/include/c++/14.2.0/backward/**",
+                "/usr/local/gcc-14.2.0/include/c++/14.2.0/experimental/**"
             ],
             "defines": [],
-            "compilerPath": "/usr/bin/g++",
-            "cStandard": "c17",
-            "cppStandard": "c++20",
+            "compilerPath": "/usr/local/gcc-14.2.0/bin/g++-14.2.0",
+            "cStandard": "c23",
+            "cppStandard": "c++23",
             "intelliSenseMode": "linux-gcc-x64",
             "compilerArgs": [
                 "-lgflags ",
