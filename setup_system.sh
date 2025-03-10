@@ -9,12 +9,7 @@
 
 set -uexo pipefail
 
-export job_max=6
-export online=0
-export large_ram=0
-export calibrate=0
-
-export PYTHONHASHSEED=0
+export online=1
 
 script_path=`readlink -f "${BASH_SOURCE[0]}"`
 script_dir=`dirname "$script_path"`
