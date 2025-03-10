@@ -15,7 +15,8 @@ python3 -m venv sea-venv
 source sea-venv/bin/activate
 
 # Installing Python packages
-python_packages=(wheel numpy scipy matplotlib scikit-learn networkx stochastic pygraphviz bs4 selenium statsmodels xlsxwriter pandas docx seaborn)
+python_packages=(wheel numpy scipy matplotlib scikit-learn networkx stochastic 
+	pygraphviz bs4 selenium statsmodels xlsxwriter pandas seaborn python-docx jinja2)
 for pip_package in ${python_packages[@]}; do
     pip3 install $pip_package 
 done

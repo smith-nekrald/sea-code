@@ -25,6 +25,7 @@ datasets_root="${experiment_root}/datasets"
 
 system_root="$code_root"/system
 "$system_root"/setup.sh
+"$code_root"/setup_python.sh
 source "$code_root"/activate.sh
 
 presets_root="$code_root"/presets
