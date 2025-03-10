@@ -8,7 +8,13 @@
 
 set -uexo pipefail
 
-# Creating Virtual Environmen
+script_path=`readlink -f "${BASH_SOURCE[0]}"`
+script_dir=`dirname "$script_path"`
+code_root=`readlink -f "$script_dir"`
+cd "$code_root"
+
+
+# Creating Virtual Environment
 
 rm -rf sea-venv
 python3 -m venv sea-venv
