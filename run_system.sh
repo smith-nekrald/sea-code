@@ -25,13 +25,13 @@ datasets_root="${experiment_root}/datasets"
 
 system_root="$code_root"/system
 "$system_root"/setup.sh
+source "$code_root"/activate.sh
 
 presets_root="$code_root"/presets
 "$presets_root"/fix_configurations.py
 
 launch_root="$code_root"/launch
 "$launch_root"/sample_datasets.sh
-source "$system_root"/compilers.sh
 "$launch_root"/ufgm_with_split.sh
 
 process_root="$code_root"/process
