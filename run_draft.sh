@@ -21,6 +21,7 @@ code_root=`readlink -f "$script_dir"`
 experiment_root="${code_root}/experiment"
 datasets_root="${experiment_root}/datasets"
 
+cd "$code_root"
 source "$code_root"/activate.sh
 set -uexo pipefail
 
