@@ -32,7 +32,7 @@ if [ ! -n "${APPTAINER_LAUNCH+1}" ]; then
 fi
 
 launch_root="$code_root"/launch
-"$launch_root"/sample_datasets.sh
+"$launch_root"/sample_debug.sh
 "$launch_root"/debug_ufgm.sh
 
 set +uexo
