@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# A one script to launch the entire system.
+# Script to perform debug launches.
 
 # Author: Aliaksandr Nekrashevich
 # Email: aliaksandr.nekrashevich@queensu.ca
@@ -29,11 +29,6 @@ presets_root="$code_root"/presets
 
 launch_root="$code_root"/launch
 "$launch_root"/sample_datasets.sh
-"$launch_root"/ufgm_with_split.sh
-
-process_root="$code_root"/process
-"$process_root"/make_info_storage.sh
-"$process_root"/create_images.sh
-"$process_root"/visualize_inputs.sh
+"$launch_root"/debug_ufgm.sh
 
 set +uexo

@@ -49,6 +49,7 @@ Thumbs.db
 *.wmv
 
 experiment
+experiment-*
 experiment*.zip
 /docs
 sea-venv
