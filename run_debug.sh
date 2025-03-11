@@ -27,7 +27,9 @@ source "$code_root"/activate.sh
 set -uexo pipefail
 
 presets_root="$code_root"/presets
-"$presets_root"/fix_configurations.py
+if [ ! -n "${APPTAINER_LAUNCH+1}" ]; then
+    "$presets_root"/fix_configurations.py
+fi
 
 launch_root="$code_root"/launch
 "$launch_root"/sample_datasets.sh

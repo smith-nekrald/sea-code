@@ -26,7 +26,6 @@ source "$code_root"/activate.sh
 set -uexo pipefail
 
 presets_root="$code_root"/presets
-
 if [ ! -n "${APPTAINER_LAUNCH+1}" ]; then
     "$presets_root"/fix_configurations.py
 fi
