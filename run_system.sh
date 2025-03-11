@@ -7,8 +7,6 @@
 # (c) Smith School of Business, 2023
 # (c) Smith School of Business, 2025
 
-set -uexo pipefail
-
 export job_max=6
 export large_ram=0
 export calibrate=0
@@ -23,6 +21,8 @@ experiment_root="${code_root}/experiment"
 datasets_root="${experiment_root}/datasets"
 
 source "$code_root"/activate.sh
+
+set -uexo pipefail
 
 presets_root="$code_root"/presets
 "$presets_root"/fix_configurations.py
