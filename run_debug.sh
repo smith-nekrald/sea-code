@@ -8,7 +8,7 @@
 # (c) Smith School of Business, 2025
 
 
-export job_max=6
+export job_max=8
 export large_ram=0
 export calibrate=0
 

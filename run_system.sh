@@ -7,11 +7,9 @@
 # (c) Smith School of Business, 2023
 # (c) Smith School of Business, 2025
 
-export job_max=6
+export job_max=8
 export large_ram=0
 export calibrate=0
-
-export PYTHONHASHSEED=0
 
 script_path=`readlink -f "${BASH_SOURCE[0]}"`
 script_dir=`dirname "$script_path"`
@@ -21,6 +19,7 @@ experiment_root="${code_root}/experiment"
 datasets_root="${experiment_root}/datasets"
 
 cd "$code_root"
+export PYTHONHASHSEED=0
 source "$code_root"/activate.sh
 
 set -uexo pipefail
