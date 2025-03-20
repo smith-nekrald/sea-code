@@ -35,4 +35,9 @@ launch_root="$code_root"/launch
 "$launch_root"/sample_debug.sh
 "$launch_root"/debug_ufgm.sh
 
+process_root="$code_root"/process
+"$process_root"/make_info_storage.sh
+"$process_root"/create_images.sh
+"$process_root"/visualize_inputs.sh
+
 set +uexo
