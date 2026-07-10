@@ -10,6 +10,7 @@
 set -uexo pipefail
 
 export online=1
+unset DISPLAY
 
 script_path=`readlink -f "${BASH_SOURCE[0]}"`
 script_dir=`dirname "$script_path"`
